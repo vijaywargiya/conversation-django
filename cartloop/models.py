@@ -4,6 +4,9 @@ from cartloop.constants import ChatStatus, OperatorGroup
 
 
 class Client(models.Model):
+    """
+    Client Model
+    """
     id = models.AutoField(primary_key=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -12,6 +15,9 @@ class Client(models.Model):
 
 
 class Operator(models.Model):
+    """
+    Operator Model
+    """
     id = models.AutoField(primary_key=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -21,6 +27,9 @@ class Operator(models.Model):
 
 
 class User(models.Model):
+    """
+    User Model
+    """
     id = models.AutoField(primary_key=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -30,6 +39,9 @@ class User(models.Model):
 
 
 class Store(models.Model):
+    """
+    Store Model
+    """
     id = models.AutoField(primary_key=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -43,6 +55,9 @@ class Store(models.Model):
 
 
 class Conversation(models.Model):
+    """
+    Conversation Model
+    """
     id = models.AutoField(primary_key=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -53,6 +68,9 @@ class Conversation(models.Model):
 
 
 class Chat(models.Model):
+    """
+    Chat Model
+    """
     id = models.AutoField(primary_key=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -65,6 +83,9 @@ class Chat(models.Model):
 
 
 class DiscountCode(models.Model):
+    """
+    Discount Code Model
+    """
     id = models.AutoField(primary_key=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

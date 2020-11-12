@@ -7,7 +7,7 @@ from cartloop.models import Chat, Conversation, User, Client, Operator, Discount
 
 class ChatSerializer(ModelSerializer):
     """
-    Serializer for routine block endpoint
+    Serializer for chat
     """
     status = serializers.CharField(read_only=True)
     created_at = serializers.DateTimeField(read_only=True)
@@ -29,7 +29,7 @@ class ChatSerializer(ModelSerializer):
 
 class ConversationSerializer(ModelSerializer):
     """
-    Serializer for routine block endpoint
+    Serializer for conversation
     """
     conversation_id = serializers.IntegerField(source="id", read_only=True)
 
@@ -59,7 +59,7 @@ class ConversationSerializer(ModelSerializer):
 
 class UserSerializer(ModelSerializer):
     """
-    Serializer for routine block endpoint
+    Serializer for user
     """
 
     class Meta:
@@ -69,7 +69,7 @@ class UserSerializer(ModelSerializer):
 
 class StoreSerializer(ModelSerializer):
     """
-    Serializer for routine block endpoint
+    Serializer for store
     """
 
     class Meta:
@@ -79,7 +79,7 @@ class StoreSerializer(ModelSerializer):
 
 class OperatorSerializer(ModelSerializer):
     """
-    Serializer for routine block endpoint
+    Serializer for operator
     """
 
     class Meta:
@@ -89,7 +89,7 @@ class OperatorSerializer(ModelSerializer):
 
 class DiscountCodeSerializer(ModelSerializer):
     """
-    Serializer for routine block endpoint
+    Serializer for discount code
     """
     store_id = serializers.IntegerField(source="store.id")
 
@@ -106,7 +106,7 @@ class DiscountCodeSerializer(ModelSerializer):
 
 class ClientSerializer(ModelSerializer):
     """
-    Serializer for routine block endpoint
+    Serializer for client
     """
 
     class Meta:
