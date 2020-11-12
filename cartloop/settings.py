@@ -26,7 +26,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
-    'https://cartloop-conversation-django.herokuapp.com'
+    'cartloop-conversation-django.herokuapp.com'
 ]
 
 # Application definition
