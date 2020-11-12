@@ -37,6 +37,10 @@ class Store(models.Model):
     name = models.CharField(max_length=100)
     timezone = models.CharField(max_length=50)
 
+    @property
+    def discount_code(self):
+        return self.discountcode_set.first().value
+
 
 class Conversation(models.Model):
     id = models.AutoField(primary_key=True)

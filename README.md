@@ -1,5 +1,10 @@
-Intellectual Property Management System Using Blockchain
+Conversation Django App
 
-The objective of this project is to create a registry for keeping track of ownership information. The registry needs to have accurate records and should be able to prove ownership of a registered property. Using blockchain as an IP registry has several advantages such as low cost of maintenance, increased transparency, reduced administrative burden. Each property has a transaction output which is termed as a coin. The coin belongs to the owner of the property. During the sale of the property, the coin belonging to the previous owner is spent and a new coin is assigned to the new owner. For owner identification, the transaction history is scanned from the genesis transaction to an unspent coin. The owner of the unspent coin is the owner of the property. In case of a real state we need a set of identifiers to which transaction outputs can be mapped. In other cases, the identifiers can be generated and physically attached during manufacturing process.
+A sample app that manages conversations between users and operators.
 
-Try it out at - https://ipmanagement.herokuapp.com/
+The app is deployed on heroku and the exposed endpoints can be found in the postman collection.
+https://www.getpostman.com/collections/8d83b42aedeb3dc3b5f6
+
+The chat payload supports variable formatting. Examples - 
+1. Hello. This is {{ operator.name }}. How can I help you?
+2. Sure {{ user.name }}. Here is your code {{ store.discount_code }}
