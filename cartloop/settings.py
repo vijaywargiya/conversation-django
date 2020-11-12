@@ -22,9 +22,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '=eg%o4pqnf@axg10@%i_s4fsi#&t(d@5c-!7@(k6na#qd5w)6='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    'https://cartloop-conversation-django.herokuapp.com'
+]
 
 # Application definition
 
